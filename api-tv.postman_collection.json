@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "5fe64277-d485-4d21-b649-4d94303f2193",
+		"name": "api-tv",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37694293"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/shows/Breaking Bad",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/shows/Breaking Bad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"shows",
+						"Breaking Bad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/shows",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Breaking Bad\",\r\n  \"premiere\": \"2008-01-20\",\r\n  \"isRunning\": false,\r\n  \"language\": \"English\",\r\n  \"mainGenre\": \"Drama\",\r\n  \"posterUrl\": \"http://example.com/breaking_bad.jpg\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/shows",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"shows"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
